@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "pretty": "prettier --no-semis --single-quote --write pages/*.js components/*.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,9 @@
   "dependencies": {
     "next": "^4.1.0",
     "react": "^16.0.0",
-    "react-addons-perf": "^15.4.2",
     "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.4"
   }
 }
