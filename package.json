@@ -1,0 +1,34 @@
+{
+  "name": "react-array-perf",
+  "version": "1.0.0",
+  "description": "React performance measurement for array rendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipp/react-array-perf.git"
+  },
+  "keywords": [
+    "react",
+    "performance",
+    "test",
+    "measurement"
+  ],
+  "author": "Gerhard Preuss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lipp/react-array-perf/issues"
+  },
+  "homepage": "https://github.com/lipp/react-array-perf#readme",
+  "dependencies": {
+    "next": "^4.1.0",
+    "react": "^16.0.0",
+    "react-addons-perf": "^15.4.2",
+    "react-dom": "^16.0.0"
+  }
+}
