@@ -21,6 +21,9 @@
     "measurement"
   ],
   "author": "Gerhard Preuss",
+  "now": {
+    "alias": "react-array-perf"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lipp/react-array-perf/issues"
