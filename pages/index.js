@@ -38,7 +38,7 @@ export default class App extends React.Component {
 
   componentDidUpdate() {
     ++this.renderCount;
-    this.dt += Date.now() - this.startTime;
+    this.dt += performance.now() - this.startTime;
     if (this.renderCount % repeats === 0) {
       if (this.componentUnderTestIndex > -1) {
         this.dts[componentsToTest[this.componentUnderTestIndex]] = this.dt;
@@ -54,15 +54,15 @@ export default class App extends React.Component {
     }
     if (this.componentUnderTest) {
       setTimeout(() => {
-        this.startTime = Date.now();
+        this.startTime = performance.now();
         this.setState({ users: getUsers() });
       }, 0);
     } else {
       alert(`
         Render Performance ArraySize: ${arraySize} Repeats: ${repeats}
-        Functional: ${this.dts.Functional} ms
-        PureComponent: ${this.dts.PureComponent} ms
-        Component: ${this.dts.Component} ms
+        Functional: ${Math.round(this.dts.Functional)} ms
+        PureComponent: ${Math.round(this.dts.PureComponent)} ms
+        Component: ${Math.round(this.dts.Component)} ms
       `);
     }
   }
