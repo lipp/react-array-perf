@@ -17,9 +17,11 @@ const componentsToTest = [
   'Functional',
   'PureComponent',
   'Component',
+  'ComponentWithShouldComponentUpdate',
   'Functional', // run tests twice to reduce "warm up" impact
   'PureComponent',
-  'Component'
+  'Component',
+  'ComponentWithShouldComponentUpdate'  
 ];
 
 export default class App extends React.Component {
@@ -63,6 +65,7 @@ export default class App extends React.Component {
         Functional: ${Math.round(this.dts.Functional)} ms
         PureComponent: ${Math.round(this.dts.PureComponent)} ms
         Component: ${Math.round(this.dts.Component)} ms
+        ComponentWithShouldComponentUpdate: ${Math.round(this.dts.ComponentWithShouldComponentUpdate)} ms
       `);
     }
   }
